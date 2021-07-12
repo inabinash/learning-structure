@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+ typedef struct student
+ {
+     int roll;
+     char name[20];
+     char course[10];
+
+ }s;
+ void print(s *ptr)
+ {
+     printf("%d %s %s ", ptr->roll,ptr->name,ptr->course);
+ }
+int main ()
+{
+    s s1={01,"Abinash_Gupta","B.Tech"};
+    s *ptr =&s1;
+    print(ptr);
+    return 0;
+}
