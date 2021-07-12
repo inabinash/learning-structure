@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+typedef struct co_ordinate
+{
+    int x;
+    int y;
+} point;
+int distace_from_origin(int a,int b)
+{
+    double   s;
+    s=(pow(2,a)+pow(2,b));
+    return sqrt(s);
+}
+int main()
+{
+    double r;
+
+    point p1={2,3};
+    r=distace_from_origin(p1.x,p1.y );
+    printf("%f",r);
+}
+
